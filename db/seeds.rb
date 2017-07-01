@@ -20,8 +20,16 @@ puts "#{teams_count} teams were created."
 #players
 Player.create!([
 { name: "Mobo", age: 25, image_url: "https://...", team: team1 },
-{ name: "Jerry", age: 30, image_url: "https://..." , team: team2} ,
-{ name: "Bennie", age: 45, image_url: "https://...", team: team3 }
+{ name: "Jerry", age: 30, image_url: "https://..." , team: team1} ,
+{ name: "Bennie", age: 45, image_url: "https://...", team: team1 },
+{ name: "Katinka", age: 25, image_url: "https://...", team: team1 },
+{ name: "Arno", age: 30, image_url: "https://..." , team: team1} ,
+{ name: "Hans", age: 45, image_url: "https://...", team: team1 },
+{ name: "Mariam", age: 25, image_url: "https://...", team: team1 },
+{ name: "James", age: 30, image_url: "https://..." , team: team1} ,
+{ name: "Janet", age: 45, image_url: "https://...", team: team1 },
+{ name: "Elvis", age: 25, image_url: "https://...", team: team1 },
+{ name: "Jannie", age: 30, image_url: "https://..." , team: team1}
 ])
 players_count = Player.all.length
 puts "#{players_count} players were created."
