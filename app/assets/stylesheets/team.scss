@@ -1,0 +1,81 @@
+// Place all the styles related to the dinosaurs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$default-padding: 20px;
+
+body {
+  max-width: 60em;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #003;
+}
+
+main {
+  background-color: #ccf; }
+
+#flex_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  h1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+dd, dt {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+
+input {
+  font-size: 35px;
+}
+
+article {
+  padding: 1em;
+  width: 29%;
+}
+
+h1 {
+  color: #fff;
+  background-color: #000066;
+  padding: $default-padding;
+  letter-spacing: 2px;
+}
+
+a {
+  color: #000066;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0 $default-padding;
+}
+
+li {
+  line-height: 1.2em;
+}
+
+footer {
+  padding:  1em $default-padding;
+}
+
+footer {
+  border-top: #ccf solid 1px;
+  background-color: #000066;
+  color: #fff;
+  a {
+    color: #fff;
+    :visited {
+      color: #ccc;
+    }
+  }
+  padding: 1em;
+}

@@ -10,10 +10,12 @@ Player.delete_all
 Team.delete_all
 
 #teams
-team1 = Team.create!( { name: "FC Utrecht", image_url: "https://..."  } )
-team2 = Team.create!( { name: "Barcelona",  image_url: "https://..." } )
-team3 = Team.create!( { name: "Chelsea",  image_url: "https://..." } )
-
+team1 = Team.create!( { name: "FC Utrecht", image_url: "https://www.fcutrecht.nl/websites/implementatie/website/img/fcutrecht.svg"  } )
+team2 = Team.create!( { name: "Tennessee Titans",  image_url: "http://www.gunaxin.com/wp-content/uploads/2015/07/Tennessee_Titans_logo.svg_-560x397.png" } )
+team3 = Team.create!( { name: "Chelsea",  image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1024px-Chelsea_FC.svg.png" } )
+team4 = Team.create!( { name: "Honduras", image_url: "http://www.freelogovectors.net/wp-content/uploads/2014/06/honduras-national-football-team-association-football-in-honduras-logo.jpg"})
+team5 = Team.create!( { name: "Barcelona", image_url: "https://s-media-cache-ak0.pinimg.com/736x/06/0d/64/060d64666183d83b93af2df759e75ecd--barcelona-players-sports-logos.jpg"  } )
+team6 = Team.create!( { name: "Ajax", image_url: "https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Ajax_Amsterdam.svg/1017px-Ajax_Amsterdam.svg.png"})
 teams_count = Team.all.length
 puts "#{teams_count} teams were created."
 

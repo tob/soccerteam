@@ -4,3 +4,7 @@
 <%= image_tag @team.image_url %>
   </article>
 </main>
+<footer>
+  <%= link_to "[Edit]", edit_team_path(@team.id) %>
+  <%= link_to "[Delete]", team_path(@team.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</footer>
