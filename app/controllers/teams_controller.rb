@@ -40,6 +40,13 @@ class TeamsController < ApplicationController
        render 'update'
     end
   end
+
+  def destroy
+    @team = Team.find(params[:id])
+    @team.destroy
+    redirect_to teams_path
+  end
+
   #these methods can be loaded only inside this controller
   private
   def team_params
