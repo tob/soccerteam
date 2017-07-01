@@ -1,0 +1,12 @@
+<main class="<%=@player.id %>">
+<h1><%= @player.name %></h1>
+  <article>
+<hr>
+<%= image_tag @player.image_url %>
+<br>
+<hr>
+<p> Age: <%= @player.age%></p>
+  </article>
+<%= link_to "[Edit]", edit_player_path(@player.id)%>
+<%= link_to "[Delete]", player_path(@player.id), method: :delete, data:{confirm:"Are you sure?!"} %>
+</main>

@@ -1,0 +1,17 @@
+<%= form_for @player do |f| %>
+<dl>
+<dt>    <%= f.label :name %></dt>
+<dd>  <%= f.text_field :name %></dd>
+
+<dt>    <%= f.label :age %></dt>
+<dd>  <%= f.number_field :age %></dd>
+
+
+<dt>
+  <%= f.label :image_url %></dt>
+<dd>  <%= f.text_field :image_url %></dd>
+</dl>
+<p>
+  <%= f.submit (@player.new_record? ? "Create" : "Update") %>
+<p>
+<% end %>
