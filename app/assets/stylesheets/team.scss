@@ -25,6 +25,16 @@ main {
   }
 }
 
+dd, dt {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+
+input {
+  font-size: 35px;
+}
+
 article {
   padding: 1em;
   width: 29%;
@@ -34,6 +44,7 @@ h1 {
   color: #fff;
   background-color: #000066;
   padding: $default-padding;
+  letter-spacing: 2px;
 }
 
 a {

@@ -1,8 +1,15 @@
 
-<main>
-<h1>Edit Team</h1>
-  <article>
+<main >
+<h1>Edit  <%= @team.name %></h1>
+<div id="flex_wrapper">
 
-<%= render "form" %>
-  </article>
+    <article>
+  <%= image_tag @team.image_url %>
+    </article
+    <article>
+
+  <%= render "form" %>
+    </article>
+    <article></article>
+  </div>
 </main>
