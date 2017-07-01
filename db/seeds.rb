@@ -20,18 +20,17 @@ teams_count = Team.all.length
 puts "#{teams_count} teams were created."
 
 #players
-Player.create!([
-{ name: "Mobo", age: 25, image_url: "https://...", team: team1 },
-{ name: "Jerry", age: 30, image_url: "https://..." , team: team1} ,
-{ name: "Bennie", age: 45, image_url: "https://...", team: team1 },
-{ name: "Katinka", age: 25, image_url: "https://...", team: team1 },
-{ name: "Arno", age: 30, image_url: "https://..." , team: team1} ,
-{ name: "Hans", age: 45, image_url: "https://...", team: team1 },
-{ name: "Mariam", age: 25, image_url: "https://...", team: team1 },
-{ name: "James", age: 30, image_url: "https://..." , team: team1} ,
-{ name: "Janet", age: 45, image_url: "https://...", team: team1 },
-{ name: "Elvis", age: 25, image_url: "https://...", team: team1 },
-{ name: "Jannie", age: 30, image_url: "https://..." , team: team1}
-])
+player1=Player.create!({ name: "Mobo", age: 25, image_url: "https://...", team: team1 }),
+player2=Player.create!({ name: "Jerry", age: 30, image_url: "https://...", team: team1}),
+player3=Player.create!({ name: "Bennie", age: 45, image_url: "https://...", team: team1}),
+player4=Player.create!({ name: "Katinka", age: 25, image_url: "https://...", team: team1}),
+player5=Player.create!({ name: "Arno", age: 30, image_url: "https://...", team: team1}),
+player6=Player.create!({ name: "Hans", age: 45, image_url: "https://...", team: team1 }),
+player7=Player.create!({ name: "Mariam", age: 25, image_url: "https://...", team: team1 }),
+player8=Player.create!({ name: "James", age: 30, image_url: "https://...", team: team1}),
+player9=Player.create!({ name: "Janet", age: 45, image_url: "https://...", team: team1 }),
+player10=Player.create!({ name: "Elvis", age: 25, image_url: "https://...", team: team1 }),
+player11=Player.create!({ name: "Jannie", age: 30, image_url: "https://...", team: team1})
+
 players_count = Player.all.length
 puts "#{players_count} players were created."
