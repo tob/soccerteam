@@ -10,9 +10,9 @@ Player.delete_all
 Team.delete_all
 
 #teams
-team1 = Team.create!( { name: "FC Utrecht", image_url: "https://..."  } )
-team2 = Team.create!( { name: "Barcelona",  image_url: "https://..." } )
-team3 = Team.create!( { name: "Chelsea",  image_url: "https://..." } )
+team1 = Team.create!( { name: "FC Utrecht", image_url: "https://www.fcutrecht.nl/websites/implementatie/website/img/fcutrecht.svg"  } )
+team2 = Team.create!( { name: "Barcelona",  image_url: "https://www.fcutrecht.nl/websites/implementatie/website/img/fcutrecht.svg" } )
+team3 = Team.create!( { name: "Chelsea",  image_url: "https://www.fcutrecht.nl/websites/implementatie/website/img/fcutrecht.svg" } )
 
 teams_count = Team.all.length
 puts "#{teams_count} teams were created."
