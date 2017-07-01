@@ -1,0 +1,12 @@
+<%= form_for @team do |f| %>
+<dl>
+<dt>    <%= f.label :name %></dt>
+<dd>  <%= f.text_field :name %></dd>
+<dt>
+  <%= f.label :image_url %></dt>
+<dd>  <%= f.text_field :image_url %></dd>
+</dl>
+<p>
+  <%= f.submit "Create" %>
+<p>
+<% end %>
