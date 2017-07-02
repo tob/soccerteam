@@ -19,6 +19,7 @@ team6 = Team.create!( { name: "Ajax", image_url: "https://upload.wikimedia.org/w
 teams_count = Team.all.length
 puts "#{teams_count} teams were created."
 
+<<<<<<< HEAD
 #names used to create players, source: https://docs.google.com/spreadsheets/d/1u0YQ0ZYSHA-x4cVs_iVqjx8GXpQmnBUFMHog6aAZ764/edit#gid=1
 names = ["Lionel Messi","Cristiano Ronaldo","Xavi","Andres Iniesta","Zlatan Ibrahimovic","Radamel Falcao","Robin van Persie","Andrea Pirlo","Yaya Toure","Edinson Cavani","Sergio Aguero","Iker Casillas","Neymar","Sergio Busquets","Xabi Alonso","Thiago Silva","Mesut Ozil","David Silva","Bastian Schweinsteiger","Gianluigi Buffon","Luis Suarez","Sergio Ramos","Vincent Kompany","Gerard Pique" , "Philipp Lahm","Willian","Marco Reus","Franck Ribery","Manuel Neuer","Ashley Cole","Wayne Rooney","Juan Mata","Thomas Muller","Mario Götze","Karim Benzema","Cesc Fabregas","Oscar","Fernandinho","Javier Mascherano","Gareth Bale","Javier Zanetti","Daniele De Rossi","Dani Alves","Petr Cech","Mats Hummels","Carles Puyol","Angel Di Maria","Carlos Tevez","Didier Drogba","Giorgio Chiellini","Marcelo","Stephan El Shaarawy","Toni Kroos","Samuel Eto’o","Jordi Alba","Mario Gomez","Arturo Vidal","Eden Hazard","James Rodriguez","Marouane Fellaini","Ramires","David Villa","Klaas Jan Huntelaar","Nemanja Vidic","Joe Hart","Arjen Robben","Mario Balotelli","Mathieu Valbuena","Pierre-Emerick Aubameyang","Robert Lewandowski","Hernanes","Pedro","Santi Cazorla","Christian Eriksen","Ezequiel Lavezzi","Joao Moutinho","Mario Mandžukić","Patrice Evra","David Luiz","Luka Modric","Victor Wanyama","Mapou Yanga-M'Biwa","Hulk","Darijo Srna","Emmanuel Mayuka","John Terry","Kwadwo Asamoah","Leonardo Bonucci","Javier Pastore","Henrikh Mkhitaryan","Moussa Dembele","Hatem Ben Arfa","Samir Nasri","Shinji Kagawa","Wesley Sneijder","Pepe","Marek Hamsik","Javi Martinez","Diego Forlan","Paulinho"]
 
@@ -29,6 +30,21 @@ for player in 0 ... names.size
 end
 
 #prints the number of players contained in Player
+=======
+#players
+player1=Player.create!({ name: "Mobo", age: 25, image_url: "https://...", team: team1 }),
+player2=Player.create!({ name: "Jerry", age: 30, image_url: "https://...", team: team1}),
+player3=Player.create!({ name: "Bennie", age: 45, image_url: "https://...", team: team1}),
+player4=Player.create!({ name: "Katinka", age: 25, image_url: "https://...", team: team1}),
+player5=Player.create!({ name: "Arno", age: 30, image_url: "https://...", team: team1}),
+player6=Player.create!({ name: "Hans", age: 45, image_url: "https://...", team: team1 }),
+player7=Player.create!({ name: "Mariam", age: 25, image_url: "https://...", team: team1 }),
+player8=Player.create!({ name: "James", age: 30, image_url: "https://...", team: team1}),
+player9=Player.create!({ name: "Janet", age: 45, image_url: "https://...", team: team1 }),
+player10=Player.create!({ name: "Elvis", age: 25, image_url: "https://...", team: team1 }),
+player11=Player.create!({ name: "Jannie", age: 30, image_url: "https://...", team: team1})
+
+>>>>>>> 9dbca16f0fe92a68d9c28fa9d863eb91e3fd2315
 players_count = Player.all.length
 puts "#{players_count} players were created."
 
