@@ -9,7 +9,7 @@
 Player.delete_all
 Team.delete_all
 
-#teams
+#teams -- I added the tema sto an array to be able to use them randomly while creating the players with teams.sample .
 teams = []
 teams << team1 = Team.create!( { name: "FC Utrecht", image_url: "https://www.fcutrecht.nl/websites/implementatie/website/img/fcutrecht.svg"  } )
 teams << team2 = Team.create!( { name: "Tennessee Titans",  image_url: "http://www.gunaxin.com/wp-content/uploads/2015/07/Tennessee_Titans_logo.svg_-560x397.png" } )
@@ -31,16 +31,10 @@ names = [
   "Diego Forlan","Paulinho"
 ]
 
-# I added the team attr to make it work but I'm pretty sure it is the wrong way to do this.
-player0 = Player.create!({ name: names[1], age: 19, image_url: "http://3.bp.blogspot.com/-p4JvM7rWNG4/T6ZcU5eKqTI/AAAAAAAACGM/K0DB35A5brE/s1600/facebook.gif", team: teams[1]})
+# Test player -- I added the team attr to make it work but I'm pretty sure it is the wrong way to do this.
+player0 = Player.create!({ name: names[1], age: 19, image_url: "http://3.bp.blogspot.com/-p4JvM7rWNG4/T6ZcU5eKqTI/AAAAAAAACGM/K0DB35A5brE/s1600/facebook.gif", team: teams.sample})
 
-#trying to print in console the output to understand what has been added to player0[:team]
-puts player0[:name]
-puts player0[:team]
-puts teams[1][:name]
-puts teams.sample[:name]
-
-# dynamically creates xx players, the only issue is that the all have the same name = player. I'm looking for a solution, I'd like to dynamically create the name e.g. player1, player2, player3, etc...
+# dynamically creates xx players, the only issue is that they all have the same name = player. I'm looking for a solution, I'd like to dynamically create the name e.g. player1, player2, player3, etc...
 for player in 0 ... names.size
     count_age = rand(19..45)
     player = Player.create!({ name: names[player], age: count_age, image_url: "http://3.bp.blogspot.com/-p4JvM7rWNG4/T6ZcU5eKqTI/AAAAAAAACGM/K0DB35A5brE/s1600/facebook.gif", team: teams.sample})
@@ -51,6 +45,20 @@ players_count = Player.all.length
 puts "#{players_count} players were created."
 
 # prints all the players name
-Player.all.each do |player|
-  puts "#{player} - #{player[:name]}, #{player[:age]} - #{player[:team]}"
+# Player.all.each do |player|
+#   puts "#{player} - #{player[:name]}, #{player[:age]} - #{player[:team]}"
+# end
+
+#prints players divided in teams
+Team.all.each do |team|
+  puts "*"*40 #divider
+  puts "TEAM - #{team[:name]}"
+  puts "*"*40 #divider
+
+  team.players.all.each do |player|
+    puts "#{player[:name]}"
+  end
+
+  puts "*"*40 #divider
+  puts "*"*40 #divider
 end
